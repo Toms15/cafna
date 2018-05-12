@@ -1,0 +1,28 @@
+#cookie-bar {background: $green; height:auto; color:$white; text-align:center; padding: 15px; z-index: 10000;}
+#cookie-bar.fixed {position:fixed; top:0; left:0px; width: 100%;}
+#cookie-bar.fixed.bottom {bottom: 0px; top:auto;}
+#cookie-bar p {margin:0; padding:0; height: auto;}
+#cookie-bar a {color:#000; display:inline-block; border-radius:0px; text-decoration:none; padding:0 6px; margin-left:8px;}
+#cookie-bar .cb-enable {background:$white; padding: 10px 30px; border: 0; margin-left: 15px; color: $red;}
+#cookie-bar .cb-enable:hover {background:$white;}
+#cookie-bar .cb-disable {background:#990000;}
+#cookie-bar .cb-disable:hover {background:#bb0000;}
+#cookie-bar .cb-policy {background:#0033bb;}
+#cookie-bar .cb-policy:hover {background:#0055dd;}
+#cookie-bar .cookie-link-2 {
+    margin: 0;
+    padding: 0;
+    color: $white;
+    text-decoration: underline;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+/* Medium and up */
+@media screen and (min-width: 40em) {}
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+/* Large and up */
+@media screen and (min-width: 64em) {}
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}

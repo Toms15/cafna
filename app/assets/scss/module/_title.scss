@@ -1,0 +1,32 @@
+.section__title {
+	text-align: center;
+	padding: 2rem 0;
+	img {
+		margin: 0 auto;
+		width: 100%;
+		max-width: 75px;
+	}
+	h2 {
+		font-family: 'Roboto Condensed', Helvetica, sans-serif;
+		text-transform: uppercase;
+		font-size: 1.5rem;
+		font-weight: 700;
+		color: $red;
+		margin-top: 1rem;
+	}
+}
+/* Medium and up */
+@media screen and (min-width: 40em) {}
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+/* Large and up */
+@media screen and (min-width: 64em) {
+	.section__title {
+		padding: 4rem 0;
+		h2 {
+			font-size: 2rem;
+		}
+	}
+}
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}

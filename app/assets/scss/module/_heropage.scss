@@ -1,0 +1,39 @@
+.section__hero-page {
+	background-color: $red;
+	color: $white;
+	font-family: 'Playfair Display', serif;
+	font-weight: 400;
+	font-style: italic;
+	font-size: 1.2rem;
+	text-align: center;
+	padding: 1.5rem 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	&:before {
+		position: absolute;
+		content: '';
+		background: url('../images/decoro.svg') repeat-x center center;
+		background-size: contain;
+		opacity: .1;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 2;
+	}
+}
+/* Medium and up */
+@media screen and (min-width: 40em) {}
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+/* Large and up */
+@media screen and (min-width: 64em) {
+	.section__hero-page {
+		height: 200px;
+		font-size: 1.5rem;
+	}
+}
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}

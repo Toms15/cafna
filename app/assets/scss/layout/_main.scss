@@ -1,0 +1,106 @@
+.section__content {
+	padding: 2rem 0 4rem;
+	z-index: 2;
+	.section__content--image {
+		position: relative;
+		.is--absolute {
+			margin-top: -50px;
+		}
+	}
+	.section__content--text {
+		padding: 0 1rem;
+		h6 {
+			font-family: 'Playfair Display', serif;
+			color: $beige;
+			font-size: 3rem;
+			font-style: italic;
+			display: inline-block;
+		}
+		h2 {
+			font-family: 'Roboto Condensed', Helvetica, sans-serif;
+			color: $red;
+			font-weight: 700;
+			font-size: 2rem;
+			text-transform: uppercase;
+			line-height: 1em;
+		}
+		p {
+			font-family: 'Roboto Condensed', Helvetica, sans-serif;
+			color: $black;
+			margin: 2rem 0;
+			font-size: .9rem;
+		}
+	}
+	&.is--dark {
+		background-color: $green;
+		position: relative;
+		padding: 0 0 4rem;
+		.show__mobile {
+			.section__content--image {
+				background: url('../images/caffe-napoli-exytus-interno.jpg') no-repeat center center;
+				background-size: cover;
+				width: 100%;
+				padding-top: 100%;
+				position: relative;
+			}
+		}
+		.section__content--text {
+			h6 {
+				color: rgba($white,.75);
+			}
+			h2 {
+				color: $beige;
+			}
+			p {
+				color: $white;
+			}
+		}
+		.section__content--image {
+			background: url('../images/caffe-napoli-exytus-interno.jpg') no-repeat center center;
+			background-size: cover;
+			width: 40%;
+			position: absolute;
+			right: 0;
+			top: 0;
+			bottom: 0;
+		}
+	}
+}
+/* Medium and up */
+@media screen and (min-width: 40em) {}
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+/* Large and up */
+@media screen and (min-width: 64em) {
+	.section__content {
+		padding: 4rem 0 6rem;
+		.section__content--image {
+			position: relative;
+			img {
+				max-width: 400px;
+				text-align: center;
+				margin: 0 auto;
+			}
+			.is--absolute {
+				margin-top: 0;
+				position: absolute;
+				top: -175px;
+				width: 100%;
+				max-width: 100%;
+			}
+		}
+		.section__content--text {
+			h6 {
+				font-size: 4rem;
+			}
+			p {
+				font-size: 1.1rem;
+			}
+		}
+		&.is--dark {
+			padding: 4rem 0 6rem;
+		}
+	}
+}
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}

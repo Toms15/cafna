@@ -1,0 +1,32 @@
+.go__to-page {
+	background-color: $beige;
+	padding: 1rem 1.3rem;
+	display: inline-block;
+	color: $red;
+	font-family: 'Roboto Condensed', Helvetica, sans-serif;
+	text-transform: uppercase;
+	font-size: .9rem;
+	position: relative;
+	transition: all 800ms cubic-bezier(.645, .045, .355, 1);
+	i {
+		margin-left: .5em;
+		transition: all 800ms cubic-bezier(.645, .045, .355, 1);
+	}
+	&:hover {
+		color: $red;
+		transition: all 800ms cubic-bezier(.645, .045, .355, 1);
+		text-decoration: none;
+		i {
+			margin-left: 1.5em;
+			transition: all 800ms cubic-bezier(.645, .045, .355, 1);
+		}
+	}
+}
+/* Medium and up */
+@media screen and (min-width: 40em) {}
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+/* Large and up */
+@media screen and (min-width: 64em) {}
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}

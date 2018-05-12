@@ -1,0 +1,93 @@
+.section__stores {
+	background-color: $red;
+	width: 100%;
+	height: 400px;
+	.stores__slider {
+		height: 100%;
+		.swiper-slide {
+			background-color: $black;
+			background-size: cover !important;
+			height: 100%;
+			p {
+				color: $white;
+			}
+			&.slide--01 {
+				background: url('../images/stores/caffe-napoli-exytus-giardino.jpg') no-repeat center center;
+			}
+			&.slide--02 {
+				background: url('../images/stores/caffe-napoli-exytus-bonaparte.jpg') no-repeat center center;
+			}
+			&.slide--03 {
+				background: url('../images/stores/caffe-napoli-exytus-largo-augusto.jpg') no-repeat center center;
+			}
+			&.slide--04 {
+				background: url('../images/stores/caffe-napoli-exytus-lafoppa.jpg') no-repeat center center;
+			}
+			&.slide--05 {
+				background: url('../images/stores/caffe-napoli-exytus-magenta.jpg') no-repeat center center;
+			}
+			&.slide--06 {
+				background: url('../images/stores/caffe-napoli-exytus-montenero.jpg') no-repeat center center;
+			}
+			&.slide--07 {
+				background: url('../images/stores/caffe-napoli-exytus-pisani.jpg') no-repeat center center;
+			}
+			&.slide--08 {
+				background: url('../images/stores/caffe-napoli-exytus-porta-nuova.jpg') no-repeat center center;
+			}
+			&.slide--09 {
+				background: url('../images/stores/caffe-napoli-exytus-ticinese.jpg') no-repeat center center;
+			}
+			&.slide--10 {
+				background: url('../images/stores/caffe-napoli-exytus-turati.jpg') no-repeat center center;
+			}
+		}
+		.swiper-button-next {
+			position: absolute;
+			right: 2rem;
+			top: 4rem;
+			width: 50px;
+			height: 50px;
+			background-color: $white;
+			border-radius: 100%;
+			background-image: none;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			i {
+				font-size: 2rem;
+			}
+		}
+		.swiper-button-prev {
+			position: absolute;
+			left: 2rem;
+			top: 4rem;
+			width: 50px;
+			height: 50px;
+			background-color: $white;
+			border-radius: 100%;
+			background-image: none;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			i {
+				font-size: 2rem;
+			}
+		}
+	}
+}
+/* Medium and up */
+@media screen and (min-width: 40em) {}
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+/* Large and up */
+@media screen and (min-width: 64em) {
+	.section__title {
+		padding: 4rem 0;
+		h2 {
+			font-size: 2rem;
+		}
+	}
+}
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}

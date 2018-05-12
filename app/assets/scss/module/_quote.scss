@@ -1,0 +1,26 @@
+.section__quote {
+	background-color: $beige;
+	color: $green;
+	font-family: 'Playfair Display', serif;
+	font-weight: 400;
+	font-style: italic;
+	font-size: 1.2rem;
+	text-align: center;
+	padding: 1.5rem 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+/* Medium and up */
+@media screen and (min-width: 40em) {}
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+/* Large and up */
+@media screen and (min-width: 64em) {
+	.section__quote {
+		font-size: 1.5rem;
+	}
+}
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}

@@ -1,0 +1,116 @@
+extend layouts/master
+
+block title
+	| Benvenuti in Caffè Napoli, il vero espresso napoletano - Caffè Napoli Exytus
+
+block append metatags 
+	meta(name='description', content='A description of the page')
+
+block content
+	// Section Hero Image
+	section.section__hero-image.section__hero-image--home
+		.swiper-container.home__slider
+			.swiper-wrapper
+				.swiper-slide.slide--01
+				.swiper-slide.slide--02
+		.section__hero-image__title
+			h1
+				span
+					|Benvenuti
+					br
+					|in Caffè Napoli
+	// Section Hero Page
+	section.section__hero-page
+		.grid-container
+			.grid-x
+				.large-12.medium-12.small-12.column
+					p
+						| Quando un napoletano è felice per qualche ragione, invece di pagare un solo caffè, quello che berrebbe lui, ne paga due, uno per sé e uno per il cliente che viene dopo. È come offrire un caffè al resto del mondo…
+						br
+						|	- Luciano De Crescenzo -
+	// Section Content -- Light
+	section.section__content
+		.grid-container
+			.grid-x
+				.large-6.medium-6.small-12.column
+					.section__content--image
+						img.is--absolute(src="/images/tazzina.png", alt="")
+				.large-6.medium-6.small-12.column
+					.section__content--text
+						h6 01
+						h2 Il vero espresso napoletano
+						p
+							| Un caffè pregiato preparato per essere speciale.
+							br
+							br
+							|Un sapore autentico ottenuto dalla lavorazione artigianale del caffè arabica, con una attenzione alla qualità ed alla miscela, per una torrefazione che esalta freschezza e intensità.
+						a.go__to-page(href="")
+							| Scopri di più
+							i.fa.fa-angle-right
+	// Section Content -- Dark	
+	section.section__content.is--dark
+		.grid-container
+			.grid-x
+				.large-6.medium-6.small-12.column.show__mobile
+					.section__content--image
+				.large-6.medium-6.small-12.column
+					.section__content--text
+						h6 02
+						h2 In una autentica casa partenopea
+						p
+							| Prendere una “tazza di caffè” come se foste in un’autentica casa napoletana: questa è la finalità della nostra ambientazione.
+							br
+							br
+							| Le maioliche, il blu del mare, e il bancone a filo strada sono gli elementi tipici del nostro salotto napoletano, dove il momento del caffè è vissuto come un rito.
+						a.go__to-page(href="")
+							| Scopri di più
+							i.fa.fa-angle-right
+				.large-6.medium-6.small-12.column.hide__mobile
+					.section__content--image
+	// Section Content -- Light
+	section.section__content
+		.grid-container
+			.grid-x
+				.large-6.medium-6.small-12.column
+					.section__content--image
+						img(src="/images/take_away.png", alt="")
+				.large-6.medium-6.small-12.column
+					.section__content--text
+						h6 03
+						h2 Dove e quando vuoi
+						p
+							| Caffè Napoli è una catena internazionale dal design contemporaneo, un luogo dove scoprire ed avere il piacere di gustare un ottimo espresso, quello napoletano, “un caffè al bacio”, celebrato in tutto il mondo per la sua bontà, in un accogliente ambiente, vivendo un’esperienza unica, avvolgente tra gusto e stile.
+						a.go__to-page(href="")
+							| Scopri di più
+							i.fa.fa-angle-right
+	// Section Quote
+	section.section__quote
+		.grid-container
+			.grid-x
+				.large-12.medium-12.small-12.column
+					p
+						| La vita è un bellissimo e interminabile viaggio alla ricerca della perfetta tazza di caffè.
+						br
+						| - Barbara A. Daniels -
+	// Section Title
+	section.section__title
+		img(src="/images/decoro.svg", alt="")
+		h2 Vieni a trovarci
+	// Section Stores
+	section.section__stores
+		.swiper-container.stores__slider
+			.swiper-wrapper
+				.swiper-slide.slide--01
+				.swiper-slide.slide--02
+				.swiper-slide.slide--03
+				.swiper-slide.slide--04
+				.swiper-slide.slide--05
+				.swiper-slide.slide--06
+				.swiper-slide.slide--07
+				.swiper-slide.slide--08
+				.swiper-slide.slide--09
+				.swiper-slide.slide--10
+			.swiper-button-prev
+				i.fa.fa-angle-left
+			.swiper-button-next
+				i.fa.fa-angle-right
