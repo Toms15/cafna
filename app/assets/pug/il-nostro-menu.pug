@@ -1,0 +1,43 @@
+extend layouts/master
+
+block title
+	| Il nostro menu, scegli il prodotto che più ti piace - Caffè Napoli Exytus
+
+block append metatags 
+	meta(name='description', content='A description of the page')
+
+block content
+	// Section Hero Image
+	section.section__hero-image.section__hero-image--menu
+	// Section Hero Page
+	section.section__hero-page
+		.grid-container
+			.grid-x
+				.large-12.medium-12.small-12.column
+					p Scopri tutti i prodotti presenti nel nostro menù e scegli quello che più ti piace tra i nostri caffè e la nostra pasticceria.
+	// Section Content
+	section.section__content
+		.grid-container
+			.grid-x
+				.large-6.medium-6.small-12.column
+					.section__content--text
+						h2 Caffè caldi
+						include partials/menu/caldi
+				.large-6.medium-6.small-12.column
+					.section__content--text
+						h2 Caffè freddi
+						include partials/menu/freddi
+	// Section Hero Image
+	section.section__hero-image.section__hero-image--menu--02
+	// Section Content
+	section.section__content
+		.grid-container
+			.grid-x
+				.large-6.medium-6.small-12.column
+					.section__content--text
+						h2 Pasticceria Mignon
+						include partials/menu/mignon
+				.large-6.medium-6.small-12.column
+					.section__content--text
+						h2 Brioches e Torte
+						include partials/menu/brioches

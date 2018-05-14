@@ -62,7 +62,7 @@ block content
 							br
 							br
 							| Le maioliche, il blu del mare, e il bancone a filo strada sono gli elementi tipici del nostro salotto napoletano, dove il momento del caffè è vissuto come un rito.
-						a.go__to-page(href="")
+						a.go__to-page(href="la-storia-di-caffe-napoli.html")
 							| Scopri di più
 							i.fa.fa-angle-right
 				.large-6.medium-6.small-12.column.hide__mobile
@@ -94,41 +94,13 @@ block content
 						| - Barbara A. Daniels -
 	// Section Title
 	section.section__title
-		img(src="/images/decoro.svg", alt="")
+		img(src="/images/decoro.svg", alt="Benvenuti in Caffè Napoli - Vieni a trovarci nei nostri punti vendita")
 		h2 Vieni a trovarci
 	// Section Stores
-	section.section__stores
-		.swiper-container.stores__slider
-			.swiper-wrapper
-				.swiper-slide.slide--01
-					.stores__info
-						h3 Giardino
-						.stores__info--content
-							p
-								i.fa.fa-map-marker
-								| Via Gaetano Giardino, 1
-								br
-								| 20123 - Milano
-							p
-								i.fa.fa-phone
-								| +39 02 89 09 2650
-							p
-								i.fa.fa-clock-o
-								| Lun - Ven: 07.00 - 19.00
-								br
-								| Sab: 08.00 - 19.00
-								br
-								| Dom: chiuso
-				.swiper-slide.slide--02
-				.swiper-slide.slide--03
-				.swiper-slide.slide--04
-				.swiper-slide.slide--05
-				.swiper-slide.slide--06
-				.swiper-slide.slide--07
-				.swiper-slide.slide--08
-				.swiper-slide.slide--09
-				.swiper-slide.slide--10
-			.swiper-button-prev
-				i.fa.fa-angle-left
-			.swiper-button-next
-				i.fa.fa-angle-right
+	include partials/stores
+	// Section Title
+	section.section__title
+		img(src="/images/decoro.svg", alt="Benvenuti in Caffè Napoli - Il nostro menu tutto da scoprire")
+		h2 Il nostro menu tutto da provare
+	// Section Menu
+	include partials/menu

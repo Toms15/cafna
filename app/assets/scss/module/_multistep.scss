@@ -1,0 +1,54 @@
+.section__multi-step {
+	.section__multi-step--image {
+		width: 100%;
+		height: 100%;
+		min-height: 400px;
+		background-size: cover !important;
+		&.bancone {
+			background: url('../images/caffe-napoli-exytus-bancone.png') no-repeat center center;
+		}
+		&.casapartenopea {
+			background: url('../images/caffe-napoli-exytus-casa-partenopea.png') no-repeat center center;
+		}
+		&.sospeso {
+			background: url('../images/caffe-napoli-exytus-caffe-sospeso.png') no-repeat center center;
+		}
+		&.maiolica {
+			background: url('../images/caffe-napoli-exytus-maiolica-vietri.png') no-repeat center center;
+		}
+	}
+	.section__multi-step--text {
+		background-color: $green;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 100%;
+		padding: 2.5rem;
+		h2 {
+			text-align: center;
+			font-family: 'Playfair Display', serif;
+			color: $beige;
+			font-weight: 400;
+			font-style: italic;
+			font-size: 1.2rem;
+			line-height: 2em;
+		}
+	}
+}
+/* Medium and up */
+@media screen and (min-width: 40em) {}
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+/* Large and up */
+@media screen and (min-width: 64em) {
+	.section__multi-step {
+		.section__multi-step--text {
+			h2 {
+				font-size: 1.3rem;
+			}
+		}
+	}
+}
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}

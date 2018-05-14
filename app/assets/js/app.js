@@ -55,11 +55,42 @@ $(document).ready(function() {
         }
     },
 
+    autoplay: {
+      delay: 5000,
+    },
+
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
 
+  });
+
+  var mySwiper = new Swiper('.hot-menu__slider', {
+    direction: 'vertical',
+    loop: true,
+    spaceBetween: 0,
+    autoplay: {
+      delay: 4000,
+    }
+  });
+
+  var mySwiper = new Swiper('.cold-menu__slider', {
+    direction: 'vertical',
+    loop: true,
+    spaceBetween: 0,
+    autoplay: {
+      delay: 5500,
+    }
+  });
+
+  // ----------------------------------------
+  // Toggle Header Menu Mobile
+  // ----------------------------------------
+  $('.stores__info h3 > .open__content').on('click', function() {
+    $(this).parent().parent().toggleClass('show');
+    // $('.stores__info').toggleClass('show');
+    $(this).toggleClass('is--rotate');
   });
 
   // ----------------------------------------

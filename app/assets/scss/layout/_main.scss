@@ -6,6 +6,10 @@
 		.is--absolute {
 			margin-top: -50px;
 		}
+		.is--full {
+			width: 100%;
+			max-width: 500px;
+		}
 	}
 	.section__content--text {
 		padding: 0 1rem;
@@ -27,8 +31,36 @@
 		p {
 			font-family: 'Roboto Condensed', Helvetica, sans-serif;
 			color: $black;
+			font-weight: 400;
 			margin: 2rem 0;
 			font-size: .9rem;
+			&.highlight {
+				font-family: 'Playfair Display', serif;
+				color: $red;
+				font-weight: 400;
+				font-style: italic;
+				font-size: 1.1rem;
+			}
+		}
+		ul {
+			li {
+				margin: 1rem 0;
+			}
+		}
+		.separator__paragraph {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			h6 {
+				font-size: 1rem;
+				background-color: $green;
+				padding: .2rem .75rem .4rem;
+			}
+			.line {
+				height: 1px;
+				background-color: $green;
+				flex: 1 0 auto;
+			}
 		}
 	}
 	&.is--dark {
@@ -42,6 +74,9 @@
 				width: 100%;
 				padding-top: 100%;
 				position: relative;
+				&.origini {
+					background: url('../images/caffe-napoli-exytus-origini-ricerca-sviluppo.png') no-repeat right center;
+				}
 			}
 		}
 		.section__content--text {
@@ -63,6 +98,9 @@
 			right: 0;
 			top: 0;
 			bottom: 0;
+			&.origini {
+				background: url('../images/caffe-napoli-exytus-origini-ricerca-sviluppo.png') no-repeat right center;
+			}
 		}
 	}
 }
@@ -94,7 +132,7 @@
 				font-size: 4rem;
 			}
 			p {
-				font-size: 1.1rem;
+				font-size: 1rem;
 			}
 		}
 		&.is--dark {

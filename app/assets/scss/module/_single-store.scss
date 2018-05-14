@@ -1,0 +1,101 @@
+.single__store {
+	background-color: $black;
+	background-size: cover !important;
+	width: 100%;
+	padding-top: 100%;
+	overflow: hidden;
+	position: relative;
+	&.single__store--giardino {
+		background: url('../images/stores/caffe-napoli-exytus-giardino.jpg') no-repeat center center;
+	}
+	.stores__info {
+		position: absolute;
+		background-color: rgba($red,.85);
+		width: 100%;
+		height: 100%;
+		top: 82%;
+		transition: all 800ms cubic-bezier(.645, .045, .355, 1);
+		h3 {
+			padding: 1rem;
+			font-family: 'Roboto Condensed', Helvetica, sans-serif;
+			color: $white;
+			text-transform: uppercase;
+			font-weight: 700;
+			font-size: 1.5rem;
+			position: relative;
+			.open__content {
+				width: 10px;
+				height: 10px;						
+				position: absolute;
+				right: 25px;
+				top: 22px;
+				transition: all 800ms cubic-bezier(.645, .045, .355, 1);
+				cursor: pointer;
+				&:before {
+					border-top: 1px solid $white;
+					border-right: 1px solid $white;
+					position: absolute;
+					content: '';
+					width: 10px;
+					height: 10px;
+					transform: rotate(-45deg);
+				}
+				&:after {
+					border-right: 1px solid $white;
+					height: 20px;
+					position: absolute;
+					content: '';
+					left: 50.5%;
+					top: -1px;
+				}
+				&.is--rotate {
+					top: 32px;
+					transform: rotate(180deg);
+					transition: all 800ms cubic-bezier(.645, .045, .355, 1);
+				}
+			}
+		}
+		.stores__info--content {
+			display: flex;
+			align-items: flex-start;
+			justify-content: flex-end;
+			flex-direction: column;
+			padding: 1rem;
+			position: absolute;
+			bottom: 0;
+			p {
+				display: flex;
+				align-items: flex-start;
+				justify-content: flex-start;
+				color: $white;
+				font-family: 'Playfair Display', serif;
+				font-weight: 400;
+				font-style: italic;
+				margin-bottom: 1rem;
+				font-size: 1.1rem;
+				i {
+					margin-right: 10px;
+					margin-top: 5px;
+				}
+			}
+		}
+		&.show {
+			top: 0;
+			transition: all 800ms cubic-bezier(.645, .045, .355, 1);
+		}
+	}
+}
+/* Medium and up */
+@media screen and (min-width: 40em) {}
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+/* Large and up */
+@media screen and (min-width: 64em) {
+	.single__store {
+		width: 90%;
+		padding-top: 90%;
+		margin: 0 5% 2.5rem;
+	}
+}
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}

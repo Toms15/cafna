@@ -2,6 +2,26 @@
 	background-color: $green;
 	height: 50vh;
 	position: relative;
+	&.section__hero-image--about {
+		background: url('../images/caffe-napoli-exytus-chi-siamo-la-storia-di-caffe-napoli.jpg') no-repeat center center;
+		background-size: cover !important;
+	}
+	&.section__hero-image--cremoso {
+		background: url('../images/caffe-napoli-exytus-cremoso-la-miscela-esclusiva-di-caffe-napoli.jpg') no-repeat center center;
+		background-size: cover !important;
+	}
+	&.section__hero-image--franchising {
+		background: url('../images/caffe-napoli-exytus-entra-nel-franchising.jpg') no-repeat center center;
+		background-size: cover !important;
+	}
+	&.section__hero-image--menu {
+		background: url('../images/caffe-napoli-exytus-entra-nel-franchising.jpg') no-repeat center center;
+		background-size: cover !important;
+	}
+	&.section__hero-image--menu--02 {
+		background: url('../images/caffe-napoli-exytus-pasticceria.jpg') no-repeat center center;
+		background-size: cover !important;
+	}
 	&.section__hero-image--home {
 		height: 75vh;
 		.section__hero-image__title {
