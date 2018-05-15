@@ -174,12 +174,12 @@ $(document).ready(function() {
 
   });
 
-  $(".language a").click(function(event){
+  $(".header__site--language a").click(function(event){
     event.preventDefault();
     var newLang = $(this).data("lang");
     var urlPieces = window.location.pathname.split( '/' );
-    var langs = ['eng', 'ita', 'jap', 'rus'];
-    if(newLang == 'ita'){
+    var langs = ['en', 'it'];
+    if(newLang == 'it'){
       if(urlPieces.length == 2 && !langs.includes(urlPieces[1])){
           window.location.href = '/' + urlPieces[1];
       }
