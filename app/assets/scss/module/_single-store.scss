@@ -5,8 +5,50 @@
 	padding-top: 100%;
 	overflow: hidden;
 	position: relative;
+	&.single__store--porta-vittoria {
+		background: url('../images/punti-vendita/caffe-napoli-exytus-porta-vittoria.jpg') no-repeat center center;
+	}
+	&.single__store--coni-zugna {
+		background: url('../images/punti-vendita/caffe-napoli-exytus-coni-zugna.jpg') no-repeat center center;
+	}
+	&.single__store--pisani {
+		background: url('../images/punti-vendita/caffe-napoli-exytus-pisani.jpg') no-repeat center center;
+	}
+	&.single__store--turati {
+		background: url('../images/punti-vendita/caffe-napoli-exytus-turati.jpg') no-repeat center center;
+	}
 	&.single__store--giardino {
-		background: url('../images/stores/caffe-napoli-exytus-giardino.jpg') no-repeat center center;
+		background: url('../images/punti-vendita/caffe-napoli-exytus-giardino.jpg') no-repeat center center;
+	}
+	&.single__store--brera {
+		background: url('../images/punti-vendita/caffe-napoli-exytus-brera.jpg') no-repeat center center;
+	}
+	&.single__store--buonaparte {
+		background: url('../images/punti-vendita/caffe-napoli-exytus-buonaparte.jpg') no-repeat center center;
+	}
+	&.single__store--montenero {
+		background: url('../images/punti-vendita/caffe-napoli-exytus-montenero.jpg') no-repeat center center;
+	}
+	&.single__store--magenta {
+		background: url('../images/punti-vendita/caffe-napoli-exytus-magenta.jpg') no-repeat center center;
+	}
+	&.single__store--largo-augusto {
+		background: url('../images/punti-vendita/caffe-napoli-exytus-largo-augusto.jpg') no-repeat center center;
+	}
+	&.single__store--marghera {
+		background: url('../images/punti-vendita/caffe-napoli-exytus-marghera.jpg') no-repeat center center;
+	}
+	&.single__store--ticinese {
+		background: url('../images/punti-vendita/caffe-napoli-exytus-ticinese.jpg') no-repeat center center;
+	}
+	&.single__store--porta-nuova {
+		background: url('../images/punti-vendita/caffe-napoli-exytus-porta-nuova.png') no-repeat center center;
+	}
+	&.single__store--santa-croce {
+		background: url('../images/punti-vendita/caffe-napoli-exytus-santa-croce.jpg') no-repeat center center;
+	}
+	&.single__store--londra {
+		background: url('../images/punti-vendita/caffe-napoli-exytus-londra.jpg') no-repeat center center;
 	}
 	.stores__info {
 		position: absolute;
