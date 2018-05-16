@@ -1,0 +1,78 @@
+extend layouts/master
+
+block title
+	| Dicono di noi - Caffè Napoli Exytus
+
+block append metatags 
+	meta(name='description', content="Benvenuti in Caffè Napoli! Prendere una “tazza di caffè” come se foste in un’autentica casa napoletana: questa è la finalità della nostra ambientazione. Le maioliche, il blu del mare, e il bancone a filo strada sono gli elementi tipici del nostro salotto napoletano, dove il momento del caffè è vissuto come un rito.")
+	meta(name='keywords', content="Dicono di noi")
+	meta(property="og:url"           content="http://caffenapoli.com/dicono-di-noi.html")
+	meta(property="og:type"          content="website")
+	meta(property="og:title"         content="Dicono di noi - Caffè Napoli Exytus")
+	meta(property="og:description"   content="Benvenuti in Caffè Napoli! Prendere una “tazza di caffè” come se foste in un’autentica casa napoletana: questa è la finalità della nostra ambientazione. Le maioliche, il blu del mare, e il bancone a filo strada sono gli elementi tipici del nostro salotto napoletano, dove il momento del caffè è vissuto come un rito.")
+	meta(property="og:image"         content="http://caffenapoli.com/images/caffe-napoli-exytus-dicono-di-noi.jpg")
+
+block content
+	// Section Hero Image
+	section.section__hero-image.section__hero-image--press
+	// Section Hero Page
+	section.section__hero-page
+		.grid-container
+			.grid-x
+				.large-12.medium-12.small-12.column
+					p Dicono di noi
+	// Section Content
+	section.section__content
+		.grid-container
+			.grid-x
+				.large-3.medium-4.small-12.column
+					a(href="http://www.repubblica.it/sapori/2016/11/18/news/lombardia_milano_invasione_pizzerie_napoletane-152206339/", target="_blank")
+						.section__content--image-square.image--repubblica
+						h2.title__press Il vesuvio a Milano
+				.large-3.medium-4.small-12.column
+					a(href="https://www.pressreader.com/italy/corriere-della-sera-milano/20150601/281728383123143", target="_blank")
+						.section__content--image-square.image--pressreader
+						h2.title__press Il segreto di un caffè al bacio
+				.large-3.medium-4.small-12.column
+					a(href="http://www.italiaoggi.it/news/dettaglio_news.asp?id=201612082105373004&chkAgenzie=ITALIAOGGI&titolo=Il%20Caff%C3%A8%20di%20Napoli%20sbarca%20a%20Milano", target="_blank")
+						.section__content--image-square.image--italia-oggi
+						h2.title__press Il caffè di Napoli sbarca a Milano
+				.large-3.medium-4.small-12.column
+					a(href="http://vivimilano.corriere.it/eventi-gastronomici/caffe-gratis-da-caffe-napoli/", target="_blank")
+						.section__content--image-square.image--vivimilano
+						h2.title__press Caffè Napoli inaugura in Foro Buonaparte
+				.large-3.medium-4.small-12.column
+					a(href="http://www.milanotoday.it/eventi/apre-caffe-napoli.html", target="_blank")
+						.section__content--image-square.image--milanotoday
+						h2.title__press Caffè Napoli inaugura in Vittor Pisani
+				.large-3.medium-4.small-12.column
+					.section__content--image-square.image--voglio-vivere-cosi
+					h2.title__press Il successo di Caffè Napoli a Londra
+				.large-3.medium-4.small-12.column
+					a(href="http://www.mixerplanet.com/caffe-napoli-punta-ad-aprire-20-locali-milano-nel-2017_116101/", target="_blank")
+						.section__content--image-square.image--mixer-planet
+						h2.title__press Caffè Napoli conquista la Madonnina
+				.large-3.medium-4.small-12.column
+					a(href="https://thebubblescorner.wordpress.com/2016/12/11/caffe-napoli-exytus/", target="_blank")
+						.section__content--image-square.image--the-bubbles
+						h2.title__press Il miglior Caffè di Milano
+				.large-3.medium-4.small-12.column
+					a(href="http://enricolevatoblog.altervista.org/2016/11/un-caffe-napoletano-in-zona-moscova-caffetteria-milano/", target="_blank")
+						.section__content--image-square.image--enrico-levato
+						h2.title__press Un caffè napoletano nel cuore di Moscova
+				.large-3.medium-4.small-12.column
+					a(href="http://theitalianzone.com/2017/09/13/il-vero-espresso-napoletano-nel-cuore-della-city-la-storia-di-caffe-napoli/", target="_blank")
+						.section__content--image-square.image--the-italian-zone
+						h2.title__press Nel cuore della City, la storia di Caffè Napoli
+				.large-3.medium-4.small-12.column
+					a(href="/images/press/Caffe-Napoli-Exytus.jpg", target="_blank")
+						.section__content--image-square.image--aziende
+						h2.title__press Un nuovo locale in zona Brera
+				.large-3.medium-4.small-12.column
+					a(href="http://www.inthemoodforlove.it/2018/03/food-5-posti-instagrammare-milano/", target="_blank")
+						.section__content--image-square.image--in-the-mood-for-love
+						h2.title__press 5 posti da instagrammare a Milano
+				.large-3.medium-4.small-12.column
+					a(href="http://www.massimodemelas.com/caffe-napoli-massimo-demelas/", target="_blank")
+						.section__content--image-square.image--massimo-demelas
+						h2.title__press L’incontro con Caffè Napoli: ospitalità, cuore e gusto. 

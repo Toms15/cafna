@@ -110,10 +110,10 @@ $(document).ready(function() {
   });
 
   // ----------------------------------------
-  // Toggle Header Menu Mobile
+  // Open Info Store
   // ----------------------------------------
-  $('.stores__info h3 > .open__content').on('click', function() {
-    $(this).parent().parent().toggleClass('show');
+  $('.open__content').on('click', function() {
+    $(this).parent().toggleClass('show');
     // $('.stores__info').toggleClass('show');
     $(this).toggleClass('is--rotate');
   });

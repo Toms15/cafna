@@ -1,0 +1,64 @@
+.section__content--image-square {
+	width: 90%;
+	padding-top: 90%;
+	margin: 0 5%;
+	background-color: $green;
+	background-size: cover !important;
+	border: 1px solid $red;
+	&.image--repubblica {
+		background: url('../images/press/repubblica.jpg') no-repeat center center;
+	}
+	&.image--pressreader {
+		background: url('../images/press/pressreader.jpg') no-repeat center center;
+	}
+	&.image--italia-oggi {
+		background: url('../images/press/italia-oggi.jpg') no-repeat center center;
+	}
+	&.image--vivimilano {
+		background: url('../images/press/vivimilano.jpg') no-repeat center center;
+	}
+	&.image--milanotoday {
+		background: url('../images/press/milanotoday.jpg') no-repeat center center;
+	}
+	&.image--voglio-vivere-cosi {
+		background: url('../images/press/voglio-vivere-cosi.jpg') no-repeat center center;
+	}
+	&.image--mixer-planet {
+		background: url('../images/press/mixer-planet.jpg') no-repeat center center;
+	}
+	&.image--the-bubbles {
+		background: url('../images/press/the-bubbles.jpg') no-repeat center center;
+	}
+	&.image--enrico-levato {
+		background: url('../images/press/enrico-levato.jpg') no-repeat center center;
+	}
+	&.image--the-italian-zone {
+		background: url('../images/press/the-italian-zone.jpg') no-repeat center center;
+	}
+	&.image--aziende {
+		background: url('../images/press/aziende.jpg') no-repeat center center;
+	}
+	&.image--in-the-mood-for-love {
+		background: url('../images/press/in-the-mood-for-love.jpg') no-repeat center center;
+	}
+	&.image--massimo-demelas {
+		background: url('../images/press/massimo-demelas.jpg') no-repeat center center;
+	}
+}
+.title__press {
+	font-family: 'Roboto Condensed', Helvetica, sans-serif;
+	font-weight: 400;
+	font-size: 1.1rem;
+	margin: 1rem 10% 2rem;
+	color: $black;
+	width: 80%;
+}
+/* Medium and up */
+@media screen and (min-width: 40em) {}
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+/* Large and up */
+@media screen and (min-width: 64em) {
+}
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
