@@ -117,6 +117,11 @@ $(document).ready(function() {
     // $('.stores__info').toggleClass('show');
     $(this).toggleClass('is--rotate');
   });
+  $('.stores__info').on('click', function() {
+    $(this).toggleClass('show');
+    // $('.stores__info').toggleClass('show');
+    $(this).find('.open__content').toggleClass('is--rotate');
+  });
 
   // ----------------------------------------
   // Pop up share
