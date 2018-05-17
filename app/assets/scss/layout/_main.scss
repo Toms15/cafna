@@ -41,6 +41,12 @@
 				font-style: italic;
 				font-size: 1.1rem;
 			}
+			a {
+				color: $green;
+				&:hover {
+					text-decoration: underline !important;
+				}
+			}
 		}
 		ul {
 			li {
