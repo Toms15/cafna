@@ -37,6 +37,10 @@ img {
 .grid-container {
   padding: 0;
 }
+*::selection {
+  background-color: $red;
+  color: $beige;
+}
 /* Medium and up */
 @media screen and (min-width: 40em) {}
 /* Medium only */

@@ -20,7 +20,8 @@
     "foundation-sites": "^6.4.3",
     "font-awesome": "fontawesome#^4.7.0",
     "jquery.cookiebar": "^1.2.1",
-    "swiper": "^4.0.7"
+    "swiper": "^4.0.7",
+    "aos": "^2.2.0"
   },
   "overrides": {
     "foundation-sites": {

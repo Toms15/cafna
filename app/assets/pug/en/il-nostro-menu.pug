@@ -1,0 +1,61 @@
+extend layouts/master
+
+block title
+	| Browse through our menu and pick whatever takes your fancy, whether it’s a coffee, a pastry, or both! - Caffè Napoli Exytus
+
+block append metatags 
+	meta(name='description', content="Il segreto del successo sta proprio nel focalizzarsi sull’Espresso con la tipica cremina napoletana. Scopri tutti i prodotti presenti nel nostro menù e scegli quello che più ti piace tra i nostri caffè e la nostra pasticceria.")
+	meta(name='keywords', content="Menù")
+	meta(property="og:url"           content="http://caffenapoli.com/en/il-nostro-menu.html")
+	meta(property="og:type"          content="website")
+	meta(property="og:title"         content="Browse through our menu and pick whatever takes your fancy, whether it’s a coffee, a pastry, or both! - Caffè Napoli Exytus")
+	meta(property="og:description"   content="Il segreto del successo sta proprio nel focalizzarsi sull’Espresso con la tipica cremina napoletana. Scopri tutti i prodotti presenti nel nostro menù e scegli quello che più ti piace tra i nostri caffè e la nostra pasticceria.")
+	meta(property="og:image"         content="http://caffenapoli.com/images/caffe-napoli-exytus-il-nostro-menu.jpg")
+
+block content
+	// Section Hero Image
+	section.section__hero-image.section__hero-image--menu
+	// Section Hero Page
+	section.section__hero-page
+		.grid-container
+			.grid-x
+				.large-12.medium-12.small-12.column
+					p Browse through our menu and pick whatever takes your fancy, whether it’s a coffee, a pastry, or both!
+	// Section Content
+	section.section__content
+		.grid-container
+			.grid-x
+				.large-12.medium-12.small-12.column
+					.section__content--text
+						h2 Hot coffees
+						include partials/menu/caldi
+	section.section__content
+		.grid-container
+			.grid-x
+				.large-12.medium-12.small-12.column
+					.section__content--text
+						h2 Cold coffees
+						include partials/menu/freddi
+	// Section Hero Image
+	section.section__hero-image.section__hero-image--menu--02
+	// Section Hero Page
+	section.section__hero-page
+		.grid-container
+			.grid-x
+				.large-12.medium-12.small-12.column
+					p I cornetti di Caffè Napoli sono prodotti artigianali, fatti a mano ogni giorno per mantenere intatti fragranza e sapore.
+	// Section Content
+	section.section__content
+		.grid-container
+			.grid-x
+				.large-12.medium-12.small-12.column
+					.section__content--text
+						h2 Miniature pastries
+						include partials/menu/mignon
+	section.section__content
+		.grid-container
+			.grid-x
+				.large-12.medium-12.small-12.column
+					.section__content--text
+						h2 Cakes and croissants
+						include partials/menu/brioches

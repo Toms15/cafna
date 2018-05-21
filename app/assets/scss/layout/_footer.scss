@@ -1,6 +1,6 @@
 footer {
 	background-color: $light-black;
-	padding: 5rem 0;
+	padding: 5rem 1rem;
 	.column {
 		padding: 0 .5rem;
 		margin-bottom: 3rem;
@@ -68,7 +68,7 @@ footer {
 .section__copyright {
 	background-color: $black;
 	color: $white;
-	padding: 1rem 0;
+	padding: 1rem 2rem;
 	p {
 		font-size: .7rem;
 	}
@@ -86,6 +86,7 @@ footer {
 		}
 	}
 	.section__copyright {
+		padding: 1rem 0;
 		.column {
 			&:last-of-type {
 				text-align: right;

@@ -1,0 +1,340 @@
+extend layouts/master
+
+block title
+	| Caffè Napoli's Stores - Caffè Napoli Exytus
+
+block append metatags 
+	meta(name='description', content="Per diffondere la cultura della tradizione del vero espresso napoletano Caffè Napoli ha diversi punti vendita. Vieni a trovarci per gustare il vero espresso napoletano! Ci trovi a Milano, Londra e presto in altre città…")
+	meta(name='keywords', content="Stores")
+	meta(property="og:url"           content="http://caffenapoli.com/en/i-punti-vendita.html")
+	meta(property="og:type"          content="website")
+	meta(property="og:title"         content="Caffè Napoli's Stores - Caffè Napoli Exytus")
+	meta(property="og:description"   content="Per diffondere la cultura della tradizione del vero espresso napoletano Caffè Napoli ha diversi punti vendita. Vieni a trovarci per gustare il vero espresso napoletano! Ci trovi a Milano, Londra e presto in altre città…")
+	meta(property="og:image"         content="http://caffenapoli.com/images/caffe-napoli-exytus-slide-01.jpg")
+
+block content
+	// Section Hero Image
+	section#map-caffenapoli.section__hero-image
+	// Section Hero Page
+	section.section__hero-page
+		.grid-container
+			.grid-x
+				.large-12.medium-12.small-12.column
+					p Come and visit us at our coffee shops, and taste the authentic Neapolitan espresso! You’ll find us in Milan, London, and other cities soon…
+	// Section Content
+	section.section__content
+		.grid-container
+			.grid-x
+				.large-12.medium-12.small-12.column
+					.section__content--text
+						h2(style="text-align:center; margin-bottom: 2rem;") Stores
+				.large-4.medium-4.small-12.column
+					.single__store.single__store--porta-vittoria(data-aos="fade-up")
+						.stores__info
+							.open__content
+							h3 
+								|Porta Vittoria
+							.stores__info--content
+								p
+									i.fa.fa-map-marker
+									| Corso di Porta Vittoria, 40/C
+									br
+									| 20122 - Milano
+								p
+									i.fa.fa-phone
+									| +39 02 36 57 9587
+								p
+									i.fa.fa-clock-o
+									| Lun - Dom: 07.00 - 20.00
+				.large-4.medium-4.small-12.column
+					.single__store.single__store--coni-zugna(data-aos="fade-up")
+						.stores__info
+							.open__content
+							h3 
+								|Coni Zugna
+							.stores__info--content
+								p
+									i.fa.fa-map-marker
+									| Viale Coni Zugna, 63
+									br
+									| 20144 - Milano
+								p
+									i.fa.fa-phone
+									| +39 49 67 7607
+								p
+									i.fa.fa-clock-o
+									| Lun - Dom: 07.00 - 20.00
+				.large-4.medium-4.small-12.column
+					.single__store.single__store--pisani(data-aos="fade-up")
+						.stores__info
+							.open__content
+							h3 
+								|Pisani
+							.stores__info--content
+								p
+									i.fa.fa-map-marker
+									| Via Vittor Pisani, 6
+									br
+									| 20124 - Milano
+								p
+									i.fa.fa-phone
+									| +39 02 66 95 286
+								p
+									i.fa.fa-clock-o
+									| Lun - Ven: 07.00 - 19.00
+									br
+									| Sab: 08.00 - 17.00
+									br
+									| Dom: closed
+				.large-4.medium-4.small-12.column
+					.single__store.single__store--turati(data-aos="fade-up")
+						.stores__info
+							.open__content
+							h3 
+								|Turati
+							.stores__info--content
+								p
+									i.fa.fa-map-marker
+									| Via Turati, 40
+									br
+									| 20121 - Milano
+								p
+									i.fa.fa-phone
+									| +39 02 62 08 6855
+								p
+									i.fa.fa-clock-o
+									| Lun - Ven: 07.00 - 19.00
+									br
+									| Sab - Dom: 08.00 - 19.00
+				.large-4.medium-4.small-12.column
+					.single__store.single__store--giardino(data-aos="fade-up")
+						.stores__info
+							.open__content
+							h3 
+								|Giardino
+							.stores__info--content
+								p
+									i.fa.fa-map-marker
+									| Via Gaetano Giardino, 1
+									br
+									| 20123 - Milano
+								p
+									i.fa.fa-phone
+									| +39 02 89 09 2650
+								p
+									i.fa.fa-clock-o
+									| Lun - Ven: 07.00 - 19.00
+									br
+									| Sab: 08.00 - 19.00
+									br
+									| Dom: closed
+				.large-4.medium-4.small-12.column
+					.single__store.single__store--brera(data-aos="fade-up")
+						.stores__info
+							.open__content
+							h3 
+								|Brera
+							.stores__info--content
+								p
+									i.fa.fa-map-marker
+									| Largo La Foppa, 1
+									br
+									| 20121 - Milano
+								p
+									i.fa.fa-phone
+									| +39 02 65 95 089
+								p
+									i.fa.fa-clock-o
+									| Lun: 07.00 - 22.00
+									br
+									| Mar - Gio: 07.00 - 24.00
+									br
+									| Ven: 07.00 - 02.00
+									br
+									| Sab: 07.00 - 02.00
+									br
+									| Dom: 08.00 - 22.00
+				.large-4.medium-4.small-12.column
+					.single__store.single__store--buonaparte(data-aos="fade-up")
+						.stores__info
+							.open__content
+							h3 
+								|Buonaparte
+							.stores__info--content
+								p
+									i.fa.fa-map-marker
+									| Foro Buonaparte, 53
+									br
+									| 20121 - Milano
+								p
+									i.fa.fa-phone
+									| +39 02 89 09 4922
+								p
+									i.fa.fa-clock-o
+									| Lun - Ven: 07.00 - 18.00
+									br
+									| Sab: 08.00 - 17.00
+									br
+									| Dom: closed
+				.large-4.medium-4.small-12.column
+					.single__store.single__store--montenero(data-aos="fade-up")
+						.stores__info
+							.open__content
+							h3 
+								|Montenero
+							.stores__info--content
+								p
+									i.fa.fa-map-marker
+									| Viale Montenero, 71
+									br
+									| 20135 - Milano
+								p
+									i.fa.fa-phone
+									| +39 02 55 14 486
+								p
+									i.fa.fa-clock-o
+									| Lun - Ven: 07.00 - 18.00
+									br
+									| Sab - Dom: 08.00 - 18.00
+				.large-4.medium-4.small-12.column
+					.single__store.single__store--magenta(data-aos="fade-up")
+						.stores__info
+							.open__content
+							h3 
+								|Magenta
+							.stores__info--content
+								p
+									i.fa.fa-map-marker
+									| Corso Magenta, 29
+									br
+									| 20123 - Milano
+								p
+									i.fa.fa-phone
+									| +39 02 89 09 5041
+								p
+									i.fa.fa-clock-o
+									| Lun - Ven: 07.00 - 18.00
+									br
+									| Sab: 08.00 - 18.00
+									br
+									| Dom: closed
+				.large-4.medium-4.small-12.column
+					.single__store.single__store--largo-augusto(data-aos="fade-up")
+						.stores__info
+							.open__content
+							h3 
+								|Largo Augusto
+							.stores__info--content
+								p
+									i.fa.fa-map-marker
+									| Largo Augusto, 8
+									br
+									| 20121 - Milano
+								p
+									i.fa.fa-phone
+									| +39 02 79 80 07
+								p
+									i.fa.fa-clock-o
+									| Lun - Ven: 07.00 - 19.00
+									br
+									| Sab: 08.00 - 19.00
+									br
+									| Dom: 08.00 - 17.00
+				.large-4.medium-4.small-12.column
+					.single__store.single__store--marghera(data-aos="fade-up")
+						.stores__info
+							.open__content
+							h3 
+								|Marghera
+							.stores__info--content
+								p
+									i.fa.fa-map-marker
+									| Via Marghera, 39
+									br
+									| 20149 - Milano
+								p
+									i.fa.fa-phone
+									| +39 02 46 91 695
+								p
+									i.fa.fa-clock-o
+									| Lun - Ven: 07.00 - 19.00
+									br
+									| Sab - Dom: 08.00 - 19.00
+				.large-4.medium-4.small-12.column
+					.single__store.single__store--ticinese(data-aos="fade-up")
+						.stores__info
+							.open__content
+							h3 
+								|Ticinese
+							.stores__info--content
+								p
+									i.fa.fa-map-marker
+									| Corso di Porta Ticinese, 14
+									br
+									| 20123 - Milano
+								p
+									i.fa.fa-phone
+									| +39 02 58 10 5596
+								p
+									i.fa.fa-clock-o
+									| Lun - Ven: 07.00 - 19.00
+									br
+									| Sab - Dom: 08.00 - 19.00
+				.large-4.medium-4.small-12.column
+					.single__store.single__store--porta-nuova(data-aos="fade-up")
+						.stores__info
+							.open__content
+							h3 
+								|Porta Nuova
+							.stores__info--content
+								p
+									i.fa.fa-map-marker
+									| Piazza Alvar Aalto
+									br
+									| 20123 - Milano
+								p
+									i.fa.fa-phone
+									| +39 02 29 00 6384
+								p
+									i.fa.fa-clock-o
+									| Lun - Ven: 07.00 - 20.00
+									br
+									| Sab - Dom: 08.00 - 20.00
+				.large-4.medium-4.small-12.column
+					.single__store.single__store--santa-croce(data-aos="fade-up")
+						.stores__info
+							.open__content
+							h3 
+								|Santa Croce
+							.stores__info--content
+								p
+									i.fa.fa-map-marker
+									| Via Santa Croce, 4
+									br
+									| 20122 - Milano
+								p
+									i.fa.fa-phone
+									| +39 02 36 58 9083
+								p
+									i.fa.fa-clock-o
+									| Lun - Dom: 07.00 - 20.00
+				.large-4.medium-4.small-12.column
+					.single__store.single__store--londra(data-aos="fade-up")
+						.stores__info
+							.open__content
+							h3 
+								|Londra
+							.stores__info--content
+								p
+									i.fa.fa-map-marker
+									| 31B Goodge St, Fitzrovia
+									br
+									| London W1T 2PP
+								p
+									i.fa.fa-phone
+									| 020 73 23 9167
+								p
+									i.fa.fa-clock-o
+									| Lun - Ven: 07.00 - 17.00
+									br
+									| Sab - Dom: closed

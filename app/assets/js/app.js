@@ -11,6 +11,13 @@ $(document).ready(function() {
    bottom: true
   });
 
+  // ----------------------------------------
+  // AOS
+  // ----------------------------------------
+  AOS.init({
+    disable: 'mobile'
+  });
+
  	// ----------------------------------------
   // Toggle Header Menu Mobile
   // ----------------------------------------
@@ -23,6 +30,27 @@ $(document).ready(function() {
   // Switch Language
   // ----------------------------------------
   $(".header__site--language a").click(function(event){
+    event.preventDefault();
+    var newLang = $(this).data("lang");
+    var urlPieces = window.location.pathname.split( '/' );
+    var langs = ['en', 'it'];
+    if(newLang == 'it'){
+      if(urlPieces.length == 2 && !langs.includes(urlPieces[1])){
+          window.location.href = '/' + urlPieces[1];
+      }
+      if(urlPieces.length == 3 && !langs.includes(urlPieces[2]) &&  langs.includes(urlPieces[1])){
+          window.location.href = '/' + urlPieces[2];
+      }
+    }else{
+      if(urlPieces.length == 2 && !langs.includes(urlPieces[1])){
+          window.location.href = '/' + newLang + '/' + urlPieces[1];
+      }
+      if(urlPieces.length == 3 && !langs.includes(urlPieces[2]) &&  langs.includes(urlPieces[1])){
+          window.location.href = '/' + newLang + '/' + urlPieces[2];
+      }
+    }
+  });
+  $(".entry__menu--language a").click(function(event){
     event.preventDefault();
     var newLang = $(this).data("lang");
     var urlPieces = window.location.pathname.split( '/' );

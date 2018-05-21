@@ -1,0 +1,116 @@
+extend layouts/master
+
+block title
+	| Welcome to Caffè Napoli, the real neapolitan espresso - Caffè Napoli Exytus
+
+block append metatags 
+	meta(name='description', content="Benvenuti in Caffè Napoli! Prendere una “tazza di caffè” come se foste in un’autentica casa napoletana: questa è la finalità della nostra ambientazione. Le maioliche, il blu del mare, e il bancone a filo strada sono gli elementi tipici del nostro salotto napoletano, dove il momento del caffè è vissuto come un rito.")
+	meta(name='keywords', content="Welcome to Caffè Napoli")
+	meta(property="og:url"           content="http://caffenapoli.com/en/")
+	meta(property="og:type"          content="website")
+	meta(property="og:title"         content="Welcome to Caffè Napoli, the real neapolitan espresso - Caffè Napoli Exytus")
+	meta(property="og:description"   content="Benvenuti in Caffè Napoli! Prendere una “tazza di caffè” come se foste in un’autentica casa napoletana: questa è la finalità della nostra ambientazione. Le maioliche, il blu del mare, e il bancone a filo strada sono gli elementi tipici del nostro salotto napoletano, dove il momento del caffè è vissuto come un rito.")
+	meta(property="og:image"         content="http://caffenapoli.com/images/caffe-napoli-exytus-slide-01.jpg")
+
+block content
+	// Section Hero Image
+	section.section__hero-image.section__hero-image--home
+		.swiper-container.home__slider
+			.swiper-wrapper
+				.swiper-slide.slide--01
+				.swiper-slide.slide--02
+				.swiper-slide.slide--03
+				.swiper-slide.slide--04
+		.section__hero-image__title
+			h1
+				span
+					|Welcome
+					br
+					|to Caffè Napoli
+					br
+					em - 'O meglio cafè -
+	// Section Hero Page
+	section.section__hero-page
+		.grid-container
+			.grid-x
+				.large-12.medium-12.small-12.column
+					p
+						| When a Neapolitan is happy for whatever reason, instead of paying for just one coffee, the one he’s drinking, he’ll pay for two: one for himself and one for the next customer. It’s like taking the rest of the world out for a coffee…
+						br
+						|	- Luciano De Crescenzo -
+	// Section Content -- Light
+	section.section__content
+		.grid-container
+			.grid-x
+				.large-6.medium-6.small-12.column
+					.section__content--image
+						img.is--absolute(src="/images/tazzina.png", alt="", data-aos="fade-right", data-aos-offset="400", data-aos-easing="ease-in-sine")
+				.large-6.medium-6.small-12.column
+					.section__content--text
+						h6 01
+						h2 Real neapolitan espresso
+						p
+							| Premium coffee, made to be special.
+							br
+							br
+							|The authentic flavour is achieved by hand-roasting Arabica coffee beans, taking care over the quality and blend in order to draw out the coffee’s freshness and intense aroma. 
+						a.go__to-page(href="il-nostro-menu.html")
+							| Find out more
+							i.fa.fa-angle-right
+	// Section Content -- Dark	
+	section.section__content.is--dark
+		.grid-container
+			.grid-x
+				.large-6.medium-6.small-12.column.show__mobile
+					.section__content--image
+				.large-6.medium-6.small-12.column
+					.section__content--text
+						h6 02
+						h2 In an authentic neapolitan home
+						p
+							| Enjoying a “cup of coffee” as though you were in an authentic Neapolitan home: that’s how our interiors are designed to make you feel.
+							br
+							br
+							| The traditional majolica tile flooring, sea-blue walls and the street-front counter are the defining elements of our Neapolitan living room, in which having a coffee is nothing short of a ritual.
+						a.go__to-page(href="la-storia-di-caffe-napoli.html")
+							| Find out more
+							i.fa.fa-angle-right
+				.large-6.medium-6.small-12.column.hide__mobile
+					.section__content--image
+	// Section Content -- Light
+	section.section__content
+		.grid-container
+			.grid-x
+				.large-6.medium-6.small-12.column
+					.section__content--image
+						img(src="/images/take_away.png", alt="", data-aos="fade-right", data-aos-offset="400", data-aos-easing="ease-in-sine")
+				.large-6.medium-6.small-12.column
+					.section__content--text
+						h6 03
+						h2 Wherever and whenever you want
+						p
+							| Caffè Napoli is an international chain with a contemporary feel. It’s a place where you can discover and savour an excellent espresso – more precisely, the quintessential Neapolitan espresso that’s celebrated the world over for its superlative taste. Sip it in a pleasant, stylish environment for a unique experience: a treat for the eyes and the taste buds.
+						a.go__to-page(href="i-punti-vendita.html")
+							| Find out more
+							i.fa.fa-angle-right
+	// Section Quote
+	section.section__quote
+		.grid-container
+			.grid-x
+				.large-12.medium-12.small-12.column
+					p
+						| Life is a beautiful and endless journey in search of the perfect cup of coffee.
+						br
+						| - Barbara A. Daniels -
+	// Section Title
+	section.section__title
+		img(src="/images/decoro.svg", alt="Welcome to Caffè Napoli - Vieni a trovarci nei nostri punti vendita")
+		h2 Come and visit us
+	// Section Stores
+	include partials/stores
+	// Section Title
+	section.section__title
+		img(src="/images/decoro.svg", alt="Welcome to Caffè Napoli - Our menu – you’ll want to try everything")
+		h2 Our menu – you’ll want to try everything
+	// Section Menu
+	include partials/menu

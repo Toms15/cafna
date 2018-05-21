@@ -1,0 +1,82 @@
+extend layouts/master
+
+block title
+	| Cremoso is the name of the exclusive blend served at Caffè Napoli. - Caffè Napoli Exytus
+
+block append metatags 
+	meta(name='description', content="Si chiama Cremoso, la miscela esclusiva di Caffè Napoli. Cremoso è una miscela di caffè altamente selezionati, composta per l’80% da caffè arabici e per il 20% da caffè robusti.")
+	meta(name='keywords', content="Cremoso")
+	meta(property="og:url"           content="http://caffenapoli.com/en/il-caffe-made-in-naples-cremoso.html")
+	meta(property="og:type"          content="website")
+	meta(property="og:title"         content="Cremoso is the name of the exclusive blend served at Caffè Napoli. - Caffè Napoli Exytus")
+	meta(property="og:description"   content="Si chiama Cremoso, la miscela esclusiva di Caffè Napoli. Cremoso è una miscela di caffè altamente selezionati, composta per l’80% da caffè arabici e per il 20% da caffè robusti.")
+	meta(property="og:image"         content="http://caffenapoli.com/images/caffe-napoli-exytus-cremoso-la-miscela-esclusiva-di-caffe-napoli.jpg")
+
+block content
+	// Section Hero Image
+	section.section__hero-image.section__hero-image--cremoso
+	// Section Hero Page
+	section.section__hero-page
+		.grid-container
+			.grid-x
+				.large-12.medium-12.small-12.column
+					p The Caffè made in Naples: Cremoso
+	// Section Content -- Light
+	section.section__content
+		.grid-container
+			.grid-x
+				.large-6.medium-6.small-12.column
+					.section__content--image
+						img.is--full(src="/images/caffe-napoli-exytus-cremoso.jpg", alt="", data-aos="fade-right", data-aos-offset="400", data-aos-easing="ease-in-sine")
+				.large-6.medium-6.small-12.column
+					.section__content--text
+						p.highlight
+							| Cremoso is the name of the exclusive blend served at Caffè Napoli.
+							br
+							|Cremoso is a blend of carefully selected coffee beans, made up of 80% Arabica and 20% Robusta varieties.
+						p
+							|The Arabica beans, which are mainly cultivated in Brazil, Central America and Africa, give our Cremoso blend a sweet flavour, intense aroma and irresistible fragrance. The Robusta beans, grown in Africa and Asia, give Cremoso its superlative dark colour and dense, foamy consistency.
+						p
+							|What makes our special blend stand out is the process whereby the coffee beans are selected and roasted, giving Cremoso its own unique flavour: sweet, chocolatey, mellow, rounded and lingering. Cremoso describe traditional Neapolitan values through a sequence of aromas, colours and flavours that speak of an age-old story of passion and daily gestures. This is the finest espresso, with an intense aroma, making coffee a cult ritual, and conveying quality, passion, experience and reliability.
+	// Section Content -- Dark	
+	section.section__content.is--dark
+		.grid-container
+			.grid-x
+				.large-6.medium-6.small-12.column.show__mobile
+					.section__content--image.origini
+				.large-6.medium-6.small-12.column
+					.section__content--text
+						h2 Sourcing, research and development
+						p
+							| We at Caffè Napoli seek to spread the culture of the authentic Italian espresso tradition. To do so, we use a team of quality- and service-oriented experts; day after day, they work meticulously to research and develop the company’s product division.
+							br
+							br
+							| The procedure for devising and producing a premium quality coffee blend starts with selecting the best sources of coffee beans and ends with roasting and grinding at Caffè Napoli.
+							br
+							br
+							| To confirm their choice of the finest beans, our experts taste the raw coffee where it’s grown, at the world’s most outstanding evergreen plantations.
+				.large-6.medium-6.small-12.column.hide__mobile
+					.section__content--image.origini
+	// Section Content -- Light
+	section.section__content
+		.grid-container
+			.grid-x
+				.large-6.medium-6.small-12.column
+					.section__content--text
+						h2 Blending, roasting
+							br
+							|and packaging
+						p
+							|Once the coffee beans have been chosen, it’s time for blending: this top-secret technique ensures that the Caffè Napoli blends are unique, inimitable recipes.
+						p
+							|Constant technological research, and creativity in our ongoing quest for new processes, products and innovative partnerships, mean that every stage in the process – from roasting, to grinding, and packaging – makes the coffee at Caffè Napoli one of the best on the market, in terms of quality.
+				.large-6.medium-6.small-12.column
+					.section__content--text
+						h2 
+							|The temple
+							br
+							|to the perfect espresso
+						p
+							|A shot of dedication, passion and love goes into every cup of our premium Italian espresso.
+						p
+							|At Caffè Napoli we use San Marco machines, for the ultimate in extraction. This puts our baristas and the cups they serve at the centre of it all, because every espresso is the result of the way they personally craft and experience the raw material – coffee.

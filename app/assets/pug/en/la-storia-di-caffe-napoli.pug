@@ -1,0 +1,93 @@
+extend layouts/master
+
+block title
+	| The Caffè Napoli story - Caffè Napoli Exytus
+
+block append metatags 
+	meta(name='description', content="Caffè Napoli nasce dalla volontà di tre imprenditori, Francesco Fiandra e i fratelli Mauro e Fabio Compagnoni, che decidono di investire in un’attività nel mondo del caffè, insieme a Giuseppe Grieco e Lino Terraciano, già titolari delle due caffetterie più famose a Pozzuoli.")
+	meta(name='keywords', content="Caffè Napoli")
+	meta(property="og:url"           content="http://caffenapoli.com/en/la-storia-di-caffe-napoli.html")
+	meta(property="og:type"          content="website")
+	meta(property="og:title"         content="The Caffè Napoli story - Caffè Napoli Exytus")
+	meta(property="og:description"   content="Caffè Napoli nasce dalla volontà di tre imprenditori, Francesco Fiandra e i fratelli Mauro e Fabio Compagnoni, che decidono di investire in un’attività nel mondo del caffè, insieme a Giuseppe Grieco e Lino Terraciano, già titolari delle due caffetterie più famose a Pozzuoli.")
+	meta(property="og:image"         content="http://caffenapoli.com/images/caffe-napoli-exytus-chi-siamo-la-storia-di-caffe-napoli.jpg")
+
+block content
+	// Section Hero Image
+	section.section__hero-image.section__hero-image--about
+	// Section Hero Page
+	section.section__hero-page
+		.grid-container
+			.grid-x
+				.large-12.medium-12.small-12.column
+					p The Caffè Napoli story
+	// Section Content
+	section.section__content
+		.grid-container
+			.grid-x
+				.large-12.medium-12.small-12.column
+					.section__content--text
+						p.highlight
+							|Caffè Napoli came into being thanks to three digital entrepreneurs (working in the web and mobile sectors), Francesco Fiandra and the Compagnoni brothers, Mauro and Fabio. They decided to invest in a coffee business along with Giuseppe Grieco and Lino Terraciano, who already owned two of the most famous coffee bars in Pozzuoli (near Naples). Together, they founded a company called Exytus, which created Caffè Napoli.
+						.separator__paragraph
+							h6 The idea
+							.line
+						p
+							|The idea came about when the city of Milan was gearing up to host the international Expo.
+							br
+							|Being passionate about good food and Italian cuisine, the three founding partners decided to diversify their holding company by undertaking a project whose core business would be food, based on the principles of scalability and replicability.
+						p
+							|Guided by their shared mission to invest in a product recognised worldwide as an Italian specialty, Francesco, Mauro and Fabio started to discuss what might be considered the strong points of Italian cuisine. The Exytus project was to have defining, stand-out characteristics that could turn one of Italy’s acknowledged strengths into the core business of their company
+						p
+							|This crucial observation led Francesco to suggest that Fabio and Mauro come and try the espresso served at Bar Exytus, his cousin’s Neapolitan café, recognised throughout the town of Pozzuoli for the quality of its coffee. On a premise of just 8 square metres, Bar Exytus specialises in just one thing: making thousands of cups of espresso each day, all served with a cremina, a silky mix of sugar, coffee and sometimes cream.
+						.separator__paragraph
+							h6 Milan
+							.line
+						p
+							|Having tasted the coffee at Exytus, the decision was inevitable: the project had to be replicated in Milan. This metropolis is naturally open to innovation, and is one of the most coffee-obsessed cities in Italy. Their hunch couldn’t have been more spot-on.
+						p
+							|Since 2015, Caffè Napoli has invaded the Lombard capital, opening 14 coffee houses in strategic areas around Milan. From the first Caffè Napoli in Largo La Foppa, to the most recent one in Porta Vittoria, true Neapolitan espresso has now become a must-have for the Milanese too.
+	section.section__multi-step
+		.grid-x
+			.large-3.medium-6.small-12.column
+				.section__multi-step--image.bancone
+			.large-3.medium-6.small-12.column
+				.section__multi-step--text
+					h2 The bar counter - clad in marble, wood and metal - is central to the Caffè Napoli experience.
+			.large-3.medium-6.small-12.column
+				.section__multi-step--image.casapartenopea
+			.large-3.medium-6.small-12.column
+				.section__multi-step--text
+					h2 Elements typically found in a Neapolitan home, representing local traditions and customs.
+	// Section Title
+	section.section__title
+		img(src="/images/decoro.svg", alt="Benvenuti in Caffè Napoli - Lasciati rapire dal gusto dell’eccellenza e scopri il Caffè Napoli più vicino a te")
+		h2 Let yourself be carried away by the taste of excellence
+		a.go__to-page(href="i-punti-vendita.html")
+			| Find your nearest Caffè Napoli
+			i.fa.fa-angle-right
+	// Section Content
+	section.section__content
+		.grid-container
+			.grid-x
+				.large-12.medium-12.small-12.column
+					.section__content--text
+						.separator__paragraph
+							h6 Close your eyes and you’re in Naples
+							.line
+						p
+							|That’s the idea behind Caffè Napoli: a coffee house format that represents the true essence of what it’s like to taste a Neapolitan espresso, the best in Italy. A space without visual or olfactory distractions, which focuses the customer’s sensory experience on the famous tazzulella (“little cup” in Neapolitan); it reproduces the typical southern Italian concept of family life, where coffee is served at any time of day, anywhere and above all, in good company.
+						p
+							|The secret to the chain’s success lies in focusing on espresso topped with the classic Neapolitan cremina head. It’s served in an authentic local atmosphere recreated through the flooring, featuring majolica tiles made in Vietri on the Amalfi Coast, with a bespoke pattern designed exclusively for Caffè Napoli; then there’s the navy blue of the sea, used as the signature colour for the walls, and the counter that opens onto the street so that customers can order and drink coffee straight from the pavement.
+	section.section__multi-step
+		.grid-x
+			.large-3.medium-6.small-12.column
+				.section__multi-step--text
+					h2 The widespread custom whereby if someone at the bar found they had a few extra coins, they’d pay for two coffees, telling the bartender “Uno sospeso!”, meaning “One on hold!”.
+			.large-3.medium-6.small-12.column
+				.section__multi-step--image.sospeso
+			.large-3.medium-6.small-12.column
+				.section__multi-step--text
+					h2 A custom-designed interpretation of flooring in an authentic Neapolitan home: majolica tiles from Vietri.
+			.large-3.medium-6.small-12.column
+				.section__multi-step--image.maiolica
