@@ -51,6 +51,9 @@
 	&.single__store--londra {
 		background: url('../images/punti-vendita/caffe-napoli-exytus-londra.jpg') no-repeat center center;
 	}
+	&.single__store--coming-soon {
+		background: url('../images/next-opening.png') no-repeat center center;
+	}
 	.stores__info {
 		position: absolute;
 		background-color: rgba($red,.85);

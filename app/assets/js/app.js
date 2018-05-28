@@ -190,26 +190,28 @@ $(document).ready(function() {
     fixfooter();
   })
 
+  console.log('Log');
+
   // ----------------------------------------
   // Google Maps
   // ----------------------------------------
   function initialize(){
     var locations = [
-          ['Porta Vittoria', 45.462436, 9.203992, 1, 'www.google.com'],
-          ['Coni Zugna', 45.456259, 9.171167, 2, 'www.google.com'],
-          ['Pisani', 45.481264, 9.200074, 3, 'www.google.com'],
-          ['Turati', 45.476972, 9.195799, 4, 'www.google.com'],
-          ['Giardino', 45.462918, 9.189021, 5, 'www.google.com'],
-          ['Brera', 45.478238, 9.184551, 6, 'www.google.com'],
-          ['Buonaparte', 45.468323, 9.178320, 7, 'www.google.com'],
-          ['Montenero', 45.461098, 9.207319, 8, 'www.google.com'],
-          ['Magenta', 45.466209, 9.176864, 9, 'www.google.com'],
-          ['Largo Augusto', 45.462928, 9.196952, 10, 'www.google.com'],
-          ['Marghera', 45.466874, 9.152020, 11, 'www.google.com'],
-          ['Ticinese', 45.459429, 9.181041, 12, 'www.google.com'],
-          ['Porta Nuova', 45.482318, 9.193439, 13, 'www.google.com'],
-          ['Santa Croce', 45.456536, 9.183384, 14, 'www.google.com'],
-          ['Londra', 51.519656, -0.134960, 15, 'www.google.com'],
+          ['Porta Vittoria', 45.462436, 9.203992, 1],
+          ['Coni Zugna', 45.456259, 9.171167, 2],
+          ['Pisani', 45.481264, 9.200074, 3],
+          ['Turati', 45.476972, 9.195799, 4],
+          ['Giardino', 45.462918, 9.189021, 5],
+          ['Brera', 45.478238, 9.184551, 6],
+          ['Buonaparte', 45.468323, 9.178320, 7],
+          ['Montenero', 45.461098, 9.207319, 8],
+          ['Magenta', 45.466209, 9.176864, 9],
+          ['Largo Augusto', 45.462928, 9.196952, 10],
+          ['Marghera', 45.466874, 9.152020, 11],
+          ['Ticinese', 45.459429, 9.181041, 12],
+          ['Porta Nuova', 45.482318, 9.193439, 13],
+          ['Santa Croce', 45.456536, 9.183384, 14],
+          ['Londra', 51.519656, -0.134960, 15],
         ];
 
         var map = new google.maps.Map(document.getElementById('map-caffenapoli'), {
@@ -478,7 +480,6 @@ $(document).ready(function() {
 
 
         var baseUrl = "https://www.google.com/maps/search/";
-        // var baseUrl = "https://www.google.com/maps/search/45.478238,9.184551";
 
         for (i = 0; i < locations.length; i++) {
 
@@ -487,8 +488,6 @@ $(document).ready(function() {
             position: new google.maps.LatLng(locations[i][1], locations[i][2]),
             map: map,
             url: baseUrl + locations[i][1] + ',' + locations[i][2]
-            // url: locations[i][4],
-
           });
 
 
