@@ -27,7 +27,7 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'UA-106080004-6');
+      gtag('config', 'UA-106080004-6', { 'anonymize_ip': true });
       
     </script>
     <!-- Google Fonts-->
@@ -37,6 +37,19 @@
     <link rel="stylesheet" href="/css/main.css">
   </head>
   <body>
+    <!-- Load Facebook SDK for JavaScript-->
+    <div id="fb-root"></div>
+    <script>
+      (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/it_IT/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!-- Your customer chat code-->
+    <div class="fb-customerchat" attribution="setup_tool" page_id="1044826432213939" theme_color="#752020" logged_in_greeting="Ciao, come possiamo aiutarti?" logged_out_greeting="Ciao, come possiamo aiutarti?"></div>
     <!-- Including header-->
     <header>
       <div class="header__site">
@@ -90,6 +103,12 @@
     <section class="section__content">
       <div class="grid-container">
         <div class="grid-x">
+          <div class="large-3 medium-4 small-12 column"><a href="https://www.retailproject.it/lespresso-di-caffe-napoli-alla-conquista-dellitalia-e-non-solo/" target="_blank">
+              <div class="section__content--image-square image--retail"></div>
+              <h2 class="title__press">L’espresso di Caffè Napoli alla “conquista” dell’Italia… e non solo</h2></a></div>
+          <div class="large-3 medium-4 small-12 column"><a href="http://wine.pambianconews.com/2018/05/caffe-napoli-studia-la-formula-pasta-bar/181162" target="_blank">
+              <div class="section__content--image-square image--pambianco"></div>
+              <h2 class="title__press">Caffè Napoli studia la formula pasta bar</h2></a></div>
           <div class="large-3 medium-4 small-12 column"><a href="http://www.repubblica.it/sapori/2016/11/18/news/lombardia_milano_invasione_pizzerie_napoletane-152206339/" target="_blank">
               <div class="section__content--image-square image--repubblica"></div>
               <h2 class="title__press">Il vesuvio a Milano</h2></a></div>

@@ -212,6 +212,7 @@ $(document).ready(function() {
           ['Porta Nuova', 45.482318, 9.193439, 13],
           ['Santa Croce', 45.456536, 9.183384, 14],
           ['Londra', 51.519656, -0.134960, 15],
+          ['Vigevano', 45.452905, 9.175931, 16],
         ];
 
         var map = new google.maps.Map(document.getElementById('map-caffenapoli'), {

@@ -54,6 +54,9 @@
 	&.single__store--coming-soon {
 		background: url('../images/next-opening.png') no-repeat center center;
 	}
+	&.single__store--opened {
+		background: url('../images/opened.jpg') no-repeat center center;
+	}
 	.stores__info {
 		position: absolute;
 		background-color: rgba($red,.85);

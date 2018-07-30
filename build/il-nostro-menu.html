@@ -27,7 +27,7 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'UA-106080004-6');
+      gtag('config', 'UA-106080004-6', { 'anonymize_ip': true });
       
     </script>
     <!-- Google Fonts-->
@@ -37,6 +37,19 @@
     <link rel="stylesheet" href="/css/main.css">
   </head>
   <body>
+    <!-- Load Facebook SDK for JavaScript-->
+    <div id="fb-root"></div>
+    <script>
+      (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/it_IT/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!-- Your customer chat code-->
+    <div class="fb-customerchat" attribution="setup_tool" page_id="1044826432213939" theme_color="#752020" logged_in_greeting="Ciao, come possiamo aiutarti?" logged_out_greeting="Ciao, come possiamo aiutarti?"></div>
     <!-- Including header-->
     <header>
       <div class="header__site">
@@ -105,7 +118,6 @@
                         <div class="large-9 medium-3 small-12 column">
                           <div class="single__item--text">
                             <h4>Espresso</h4>
-                            <h6>€ 1.20</h6>
                           </div>
                         </div>
                       </div>
@@ -121,7 +133,6 @@
                         <div class="large-9 medium-3 small-12 column">
                           <div class="single__item--text">
                             <h4>Caffè Marechiaro<span>Caffè, nutella, cocco, granella di cocco, cacao</span></h4>
-                            <h6>€ 3.00</h6>
                           </div>
                         </div>
                       </div>
@@ -137,7 +148,6 @@
                         <div class="large-9 medium-3 small-12 column">
                           <div class="single__item--text">
                             <h4>Caffè Nutella<span>Caffè, nutella, granella di nocciole, cacao</span></h4>
-                            <h6>€ 3.00</h6>
                           </div>
                         </div>
                       </div>
@@ -153,7 +163,6 @@
                         <div class="large-9 medium-3 small-12 column">
                           <div class="single__item--text">
                             <h4>Caffè Posillipo<span>Caffè, crema di latte, nocciola, cacao</span></h4>
-                            <h6>€ 3.00</h6>
                           </div>
                         </div>
                       </div>
@@ -169,7 +178,6 @@
                         <div class="large-9 medium-3 small-12 column">
                           <div class="single__item--text">
                             <h4>Caffè Spaccanapoli<span>Caffè, gianduia, vaniglia, cannella, brownies</span></h4>
-                            <h6>€ 3.00</h6>
                           </div>
                         </div>
                       </div>
@@ -185,7 +193,6 @@
                         <div class="large-9 medium-3 small-12 column">
                           <div class="single__item--text">
                             <h4>Caffè Chiaia<span>Caffè, gianduia, brownies, cacao</span></h4>
-                            <h6>€ 3.00</h6>
                           </div>
                         </div>
                       </div>
@@ -201,7 +208,6 @@
                         <div class="large-9 medium-3 small-12 column">
                           <div class="single__item--text">
                             <h4>Caffè Marocchino<span>Caffè, cioccolato, latte, cacao</span></h4>
-                            <h6>€ 1.50</h6>
                           </div>
                         </div>
                       </div>
@@ -217,7 +223,6 @@
                         <div class="large-9 medium-3 small-12 column">
                           <div class="single__item--text">
                             <h4>Caffè Nocciola<span>Caffè, crema di nocciola, cacao</span></h4>
-                            <h6>€ 3.00</h6>
                           </div>
                         </div>
                       </div>
@@ -233,7 +238,6 @@
                         <div class="large-9 medium-3 small-12 column">
                           <div class="single__item--text">
                             <h4>Caffè Crema di Latte<span>Caffè, crema di latte, cacao</span></h4>
-                            <h6>€ 3.00</h6>
                           </div>
                         </div>
                       </div>
@@ -249,7 +253,6 @@
                         <div class="large-9 medium-3 small-12 column">
                           <div class="single__item--text">
                             <h4>Caffè Panna<span>Caffè, panna, cacao, cannella</span></h4>
-                            <h6>€ 2.00</h6>
                           </div>
                         </div>
                       </div>
@@ -265,7 +268,6 @@
                         <div class="large-9 medium-3 small-12 column">
                           <div class="single__item--text">
                             <h4>Caffè Pistacchio<span>Caffè, granella di nocciola, pistacchio, cacao</span></h4>
-                            <h6>€ 3.00</h6>
                           </div>
                         </div>
                       </div>
@@ -281,7 +283,6 @@
                         <div class="large-9 medium-3 small-12 column">
                           <div class="single__item--text">
                             <h4>Cappuccino Nero<span>Caffè, gianduia, latte, cacao, brownies</span></h4>
-                            <h6>€ 3.00</h6>
                           </div>
                         </div>
                       </div>
@@ -297,7 +298,6 @@
                         <div class="large-9 medium-3 small-12 column">
                           <div class="single__item--text">
                             <h4>Caffè Brasiliano<span>Caffè, crema di latte, kahlua, cacao</span></h4>
-                            <h6>€ 3.50</h6>
                           </div>
                         </div>
                       </div>
@@ -313,7 +313,6 @@
                         <div class="large-9 medium-3 small-12 column">
                           <div class="single__item--text">
                             <h4>Caffè Mergellina<span>Caffè, nutella, crema di latte, granella di nocciole, cacao</span></h4>
-                            <h6>€ 3.00</h6>
                           </div>
                         </div>
                       </div>
@@ -329,7 +328,6 @@
                         <div class="large-9 medium-3 small-12 column">
                           <div class="single__item--text">
                             <h4>Cioccolata calda</h4>
-                            <h6>€ 3.50</h6>
                           </div>
                         </div>
                       </div>
@@ -345,7 +343,6 @@
                         <div class="large-9 medium-3 small-12 column">
                           <div class="single__item--text">
                             <h4>Cioccolata calda con panna</h4>
-                            <h6>€ 4.00</h6>
                           </div>
                         </div>
                       </div>
@@ -376,7 +373,6 @@
                         <div class="large-9 medium-3 small-12 column">
                           <div class="single__item--text">
                             <h4>Cremino</h4>
-                            <h6>Piccolo € 2.50 / Grande € 3.50</h6>
                           </div>
                         </div>
                       </div>
@@ -392,7 +388,6 @@
                         <div class="large-9 medium-3 small-12 column">
                           <div class="single__item--text">
                             <h4>Cremino Nocciola<span>Cremino, nocciola, cacao</span></h4>
-                            <h6>€ 3.50</h6>
                           </div>
                         </div>
                       </div>
@@ -408,7 +403,6 @@
                         <div class="large-9 medium-3 small-12 column">
                           <div class="single__item--text">
                             <h4>Cremino Bianco<span>Cremino, crema di latte, cacao</span></h4>
-                            <h6>€ 3.50</h6>
                           </div>
                         </div>
                       </div>
@@ -424,7 +418,6 @@
                         <div class="large-9 medium-3 small-12 column">
                           <div class="single__item--text">
                             <h4>Cremino Nutella<span>Cremino, nutella, granella di nocciola, cacao</span></h4>
-                            <h6>€ 3.50</h6>
                           </div>
                         </div>
                       </div>
@@ -440,7 +433,6 @@
                         <div class="large-9 medium-3 small-12 column">
                           <div class="single__item--text">
                             <h4>Cremino Panna<span>Cremino, panna, cacao/cannella</span></h4>
-                            <h6>€ 3.50</h6>
                           </div>
                         </div>
                       </div>
@@ -456,7 +448,6 @@
                         <div class="large-9 medium-3 small-12 column">
                           <div class="single__item--text">
                             <h4>Granita caffè<span>Ghiaccio, caffè, cacao</span></h4>
-                            <h6>Piccola € 3.00 / Grande € 4.00</h6>
                           </div>
                         </div>
                       </div>
@@ -472,7 +463,6 @@
                         <div class="large-9 medium-3 small-12 column">
                           <div class="single__item--text">
                             <h4>Caffè shakerato<span>Caffè, ghiaccio, cacao</span></h4>
-                            <h6>€ 3.50</h6>
                           </div>
                         </div>
                       </div>
@@ -488,7 +478,6 @@
                         <div class="large-9 medium-3 small-12 column">
                           <div class="single__item--text">
                             <h4>Port’alba<span>Cremino, gianduia, brownies, cacao</span></h4>
-                            <h6>€ 4.00</h6>
                           </div>
                         </div>
                       </div>
@@ -504,7 +493,6 @@
                         <div class="large-9 medium-3 small-12 column">
                           <div class="single__item--text">
                             <h4>Vesuvio<span>Cremino, nutella, crema di latte, granella di nocciola, cacao</span></h4>
-                            <h6>€ 4.00</h6>
                           </div>
                         </div>
                       </div>
@@ -548,7 +536,6 @@
                         <div class="large-9 medium-3 small-12 column">
                           <div class="single__item--text">
                             <h4>Sfogliatella riccia<span>Famosa in tutto il mondo, detta riccia per via delle onde dorate che la circondano fatte di pasta fillo lavorata a mano, con un fragrante ripieno di crema di ricotta zuccherata, semola, canditi naturali e cannella.</span></h4>
-                            <h6>€ 1.50</h6>
                           </div>
                         </div>
                       </div>
@@ -564,7 +551,6 @@
                         <div class="large-9 medium-3 small-12 column">
                           <div class="single__item--text">
                             <h4>Sfogliatella frolla<span>Alternativa alla sfogliatella riccia, che si caratterizza per un guscio molto croccante, presenta una composizione più morbida e semplice. Un involucro rotondo di pasta frolla - da cui il nome - con lo stesso ripieno a base di ricotta, semola, zucchero, canditi naturali e cannella.</span></h4>
-                            <h6>€ 1.50</h6>
                           </div>
                         </div>
                       </div>
@@ -580,7 +566,6 @@
                         <div class="large-9 medium-3 small-12 column">
                           <div class="single__item--text">
                             <h4>Pastierina<span>Un classico non più solo del periodo pasquale, come vuole la tradizione che la ricollega a cerere e al tempo della rinascita, croccante fuori nella pasta frolla quanto morbida dentro. In un amalgama sapiente di ricotta, frutta candita e grano.</span></h4>
-                            <h6>€ 1.50</h6>
                           </div>
                         </div>
                       </div>
@@ -596,7 +581,6 @@
                         <div class="large-9 medium-3 small-12 column">
                           <div class="single__item--text">
                             <h4>Capresina<span>La caprese, diffusa oltre che a capri anche nella penisola sorrentina e in costiera amalfitana,un morbido impasto fatto di cacao amaro, cioccolato fondente extra e mandorle pelate dolci.</span></h4>
-                            <h6>€ 1.50</h6>
                           </div>
                         </div>
                       </div>
@@ -612,7 +596,6 @@
                         <div class="large-9 medium-3 small-12 column">
                           <div class="single__item--text">
                             <h4>Babà<span>Pasta sofficemente lievitata e cotta al forno, conosciuta per il suo soave profumo di rhum, è questo il dna partenopeo di un dolce capolavoro al quale è impossibile resistere.</span></h4>
-                            <h6>€ 2.00</h6>
                           </div>
                         </div>
                       </div>
@@ -643,7 +626,6 @@
                         <div class="large-9 medium-3 small-12 column">
                           <div class="single__item--text">
                             <h4>Cornetto vuoto</h4>
-                            <h6>€ 1.00</h6>
                           </div>
                         </div>
                       </div>
@@ -659,7 +641,6 @@
                         <div class="large-9 medium-3 small-12 column">
                           <div class="single__item--text">
                             <h4>Cornetto crema<span>Cornetto al burro farcito alla crema.</span></h4>
-                            <h6>€ 1.30</h6>
                           </div>
                         </div>
                       </div>
@@ -675,7 +656,6 @@
                         <div class="large-9 medium-3 small-12 column">
                           <div class="single__item--text">
                             <h4>Cornetto nutella<span>Cornetto al burro farcito con nutella.</span></h4>
-                            <h6>€ 1.30</h6>
                           </div>
                         </div>
                       </div>
@@ -691,7 +671,6 @@
                         <div class="large-9 medium-3 small-12 column">
                           <div class="single__item--text">
                             <h4>Cornetto marmellata di albicocca</h4>
-                            <h6>€ 1.30</h6>
                           </div>
                         </div>
                       </div>
@@ -707,7 +686,6 @@
                         <div class="large-9 medium-3 small-12 column">
                           <div class="single__item--text">
                             <h4>Fagottino cioccolato<span>Fagottino ripieno di crema gianduia ricoperto con gocce di cioccolato fondente.</span></h4>
-                            <h6>€ 1.30</h6>
                           </div>
                         </div>
                       </div>
@@ -723,7 +701,6 @@
                         <div class="large-9 medium-3 small-12 column">
                           <div class="single__item--text">
                             <h4>Fagottino mele</h4>
-                            <h6>€ 1.30</h6>
                           </div>
                         </div>
                       </div>
@@ -739,7 +716,6 @@
                         <div class="large-9 medium-3 small-12 column">
                           <div class="single__item--text">
                             <h4>Cornetto pistacchio</h4>
-                            <h6>€ 1.30</h6>
                           </div>
                         </div>
                       </div>
@@ -755,7 +731,6 @@
                         <div class="large-9 medium-3 small-12 column">
                           <div class="single__item--text">
                             <h4>Cornetto integrale al miele<span>Cornetto integrale al burro farcito di purea di mele e miele con copertura di zucchero di canna.</span></h4>
-                            <h6>€ 1.30</h6>
                           </div>
                         </div>
                       </div>
@@ -771,7 +746,6 @@
                         <div class="large-9 medium-3 small-12 column">
                           <div class="single__item--text">
                             <h4>Treccia uvetta</h4>
-                            <h6>€ 1.30</h6>
                           </div>
                         </div>
                       </div>
@@ -787,7 +761,6 @@
                         <div class="large-9 medium-3 small-12 column">
                           <div class="single__item--text">
                             <h4><i class="fa fa-leaf"></i>Cornetto vuoto<span>Prodotto ottenuto con materie prima di ottima qualità idonee ad una alimentazione vegana. NO MIELE - NO UOVA - NO LATTE - SENZA OLIO DI PALMA - SENZA GRASSI IDROGENATI</span></h4>
-                            <h6>€ 1.10</h6>
                           </div>
                         </div>
                       </div>
@@ -803,7 +776,6 @@
                         <div class="large-9 medium-3 small-12 column">
                           <div class="single__item--text">
                             <h4><i class="fa fa-leaf"></i>Cornetto marmellata di arancia</h4>
-                            <h6>€ 1.30</h6>
                           </div>
                         </div>
                       </div>
@@ -819,7 +791,6 @@
                         <div class="large-9 medium-3 small-12 column">
                           <div class="single__item--text">
                             <h4>Krapfen crema<span>Krapfen al burro farcito con crema. SENZA OLIO DI PALMA</span></h4>
-                            <h6>€ 1.50</h6>
                           </div>
                         </div>
                       </div>
@@ -835,7 +806,6 @@
                         <div class="large-9 medium-3 small-12 column">
                           <div class="single__item--text">
                             <h4>Krapfen nutella<span>Krapfen al burro farcito alla nutella. SENZA OLIO DI PALMA</span></h4>
-                            <h6>€ 1.50</h6>
                           </div>
                         </div>
                       </div>
@@ -851,7 +821,6 @@
                         <div class="large-9 medium-3 small-12 column">
                           <div class="single__item--text">
                             <h4>Zeppola</h4>
-                            <h6>€ 2.50</h6>
                           </div>
                         </div>
                       </div>
@@ -867,7 +836,6 @@
                         <div class="large-9 medium-3 small-12 column">
                           <div class="single__item--text">
                             <h4>Monoporzione</h4>
-                            <h6>€ 5.00</h6>
                           </div>
                         </div>
                       </div>
@@ -883,7 +851,6 @@
                         <div class="large-9 medium-3 small-12 column">
                           <div class="single__item--text">
                             <h4>Torta al pezzo</h4>
-                            <h6>€ 4.00</h6>
                           </div>
                         </div>
                       </div>
@@ -899,7 +866,6 @@
                         <div class="large-9 medium-3 small-12 column">
                           <div class="single__item--text">
                             <h4>Cornetto mignon (Vuoto, Crema o Cioccolato)</h4>
-                            <h6>€ 0.80</h6>
                           </div>
                         </div>
                       </div>

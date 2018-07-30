@@ -57,6 +57,9 @@
 			&.slide--coming-soon {
 				background: url('../images/next-opening.png') no-repeat center center;
 			}
+			&.slide--opened {
+				background: url('../images/opened.jpg') no-repeat center center;
+			}
 			.stores__info {
 				position: absolute;
 				background-color: rgba($red,.85);

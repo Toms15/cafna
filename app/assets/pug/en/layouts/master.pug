@@ -24,7 +24,7 @@ html(lang = 'en')
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'UA-106080004-6');
+      gtag('config', 'UA-106080004-6', { 'anonymize_ip': true });
 
     // Google Fonts
     link(href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i|Roboto+Condensed:400,700', rel='stylesheet')
@@ -34,6 +34,17 @@ html(lang = 'en')
     link(rel='stylesheet' href='/css/main.css')
 
   body
+    #fb-root
+    script.
+      (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/it_IT/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    // Your customer chat code
+    .fb-customerchat(attribution='setup_tool', page_id='1044826432213939', theme_color='#752020', logged_in_greeting='Ciao, come possiamo aiutarti?', logged_out_greeting='Ciao, come possiamo aiutarti?')
     // Including header
     include header
 
